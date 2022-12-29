@@ -1,0 +1,14 @@
+<h2>My Count app - CURRENT COUNT VALUE IS {{count$ | async}}</h2>
+<app-search></app-search>
+<button (click)="changeShowHide()">Show/hide</button>
+<app-counter></app-counter>
+<ng-container *ngIf="showMore">
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+</ng-container>

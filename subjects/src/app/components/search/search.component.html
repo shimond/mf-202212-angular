@@ -1,0 +1,10 @@
+<div>
+    <input 
+    [formControl]="searchControl"
+    type="search" placeholder="search name"/>
+</div>
+<div>
+<ul>
+    <li *ngFor="let item of result$ | async">{{item}}</li>
+</ul>
+</div>

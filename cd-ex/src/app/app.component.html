@@ -1,0 +1,19 @@
+
+<h1>My Web App  {{count}}</h1>
+<app-student-list [students]="(studentsInRoot$ | async)!"></app-student-list>
+<button (click)="changeIt()">Change</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>{{studentsInRoot$ | async}}</div>
