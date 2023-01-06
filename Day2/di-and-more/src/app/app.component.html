@@ -1,0 +1,20 @@
+<div>
+  <a routerLink="/">Admin</a> |
+  <a routerLink="/admin/kefel/5" [queryParams]="{op:'*'}">Kefel 5</a> |  
+  <a routerLink="/admin/kefel/10" [queryParams]="{op:'+'}">Kefel 10</a> |
+  <button (click)="navigateTo10ByCode()"> Kefel 12 by code</button>  
+
+</div>
+<router-outlet></router-outlet>
+
+<button (click)="hideAll()">Hide all</button>
+<ng-container *ngIf="!hide">
+  <app-test></app-test>
+  <app-test></app-test>
+  <app-test></app-test>
+  <app-test></app-test>
+  <app-test></app-test>
+  <app-test></app-test>
+  <app-test></app-test>
+  <app-test></app-test>
+</ng-container>

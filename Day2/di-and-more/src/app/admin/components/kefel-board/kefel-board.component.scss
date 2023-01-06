@@ -1,0 +1,21 @@
+:host{
+    .grid{
+        display:grid;
+        gap: 10px;
+        .item{
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 9px;
+        }
+    }
+
+    // ::ng-deep{
+
+    // }
+}
+
+// zap.co.il/products/hp/printers/HP767444?orderBy=name&s1=1#admin
+// url
+// qs
+// hash
