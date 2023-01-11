@@ -1,0 +1,21 @@
+<div [formGroup]="form">
+  <div> Name: </div>
+  <div>
+    <input formControlName="name">
+  </div>
+  <div> Age: </div>
+  <div>
+    <app-plus-minus-input formControlName="age"></app-plus-minus-input>
+    <!-- <input formControlName="age"> -->
+  </div>
+  <div> grade: </div>
+  <div>
+    <app-plus-minus-input formControlName="grade"></app-plus-minus-input>
+    <!-- <input formControlName="age"> -->
+  </div>
+
+</div>
+<button [disabled]="form.invalid">Save</button>
+<pre>{{form.value | json}}</pre>
+<router-outlet>
+</router-outlet>

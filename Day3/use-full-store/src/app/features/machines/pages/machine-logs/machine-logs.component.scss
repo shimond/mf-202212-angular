@@ -1,0 +1,11 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    .list-area{
+
+    }
+    .filter {
+        padding-left: 10px;
+    }
+}

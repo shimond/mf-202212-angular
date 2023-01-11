@@ -1,0 +1,6 @@
+<h1> My App</h1>
+<button (click)="logout()" *ngIf="isAuth$ | async else anony">logout</button>
+<ng-template #anony>
+  <button (click)="login()">Login</button>
+</ng-template>
+<router-outlet></router-outlet>

@@ -1,0 +1,10 @@
+<div>
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>search</mat-label>
+        <input [formControl]="searchControl" matInput placeholder="Placeholder">
+    </mat-form-field>
+</div>
+<mat-selection-list [formControl]="levelsControl">
+    <mat-list-option *ngFor="let item of allLevels"
+                     [value]="item"> {{item}} </mat-list-option>
+</mat-selection-list>

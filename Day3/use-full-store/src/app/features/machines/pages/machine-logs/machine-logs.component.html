@@ -1,0 +1,21 @@
+<h1 *ngIf="isBusy$ | async;else page">Loading...</h1>
+<ng-template #page>
+    <h2>Logs of {{machineName$ | async}}</h2>
+    <div class="main-layout">
+        <div class="list-area">
+            <div *ngIf="unreadLogs$ | async as items">
+                <h3>Unread messages</h3>
+                <app-log-list [items]="items"></app-log-list>
+            </div>
+            <div *ngIf="readLogs$ | async as items">
+                <h3>Read messages</h3>
+                <app-log-list [items]="items"></app-log-list>
+            </div>
+        </div>
+        <div class="filter">
+            <h3>Filter </h3>
+            <app-logs-selector [selectedLevels]="selectedLevels$ | async"></app-logs-selector>
+        </div>
+    </div>
+</ng-template>
+<h2></h2>
